@@ -1,0 +1,14 @@
+.container {
+  background-color: var(--dark-black-color);
+  padding: 8px 10px;
+  color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container svg {
+  margin-right: 8px;
+}

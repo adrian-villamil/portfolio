@@ -1,0 +1,76 @@
+.experience {
+  padding-top: 70px;
+}
+
+.experience > h1 {
+  color: var(--red-color);
+  font-size: 2.6em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  max-width: 500px;
+  border-left: 2px solid var(--white-color);
+  margin: 0 20px;
+  padding-left: 40px;
+}
+
+.box {
+  background-color: var(--light-black-color);
+  padding: 20px;
+  position: relative;
+}
+
+.box::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  outline: 6px solid var(--dark-black-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: calc(100% + 31px);
+  background-color: var(--red-color);
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 100%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent var(--light-black-color) transparent transparent;
+}
+
+.box .period {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  gap: 6px;
+  color: var(--white-color);
+}
+
+.box .job-position {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 1.8em;
+  color: var(--yellow-color);
+}
+
+.box .company-name {
+  margin: 0;
+  font-weight: 700;
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+.box .job-description {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-wrap: balance;
+  font-size: 0.9em;
+  color: var(--white-color);
+}
