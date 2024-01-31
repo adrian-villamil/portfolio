@@ -4,7 +4,7 @@ interface Experience {
   id: number;
   jobPosition: string;
   companyName: string;
-  period: string;
+  dates: string;
   jobDescription: string;
 }
 

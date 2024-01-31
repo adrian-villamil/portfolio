@@ -45,7 +45,7 @@
   border-color: transparent var(--light-black-color) transparent transparent;
 }
 
-.box .period {
+.box .dates {
   display: flex;
   align-items: center;
   font-size: 0.9em;

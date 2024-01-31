@@ -6,7 +6,7 @@ const experiences: Experience[] = [
     id: 1,
     jobPosition: 'Frontend Developer',
     companyName: 'BitPointer SAS',
-    period: 'February 2023 - December 2023',
+    dates: 'February 2023 - January 2024',
     jobDescription: 'In charge of developing interfaces for web applications using technologies such as ReactJS and MaterialUI.'
   },
 ];
@@ -18,9 +18,9 @@ export const Experience = () => {
       <section className={styles.list}>
         {experiences.map((experience) => (
           <div key={experience.id} className={styles.box}>
-            <time className={styles.period}>
+            <time className={styles.dates}>
               <FaRegCalendarAlt />
-              {experience.period}
+              {experience.dates}
             </time>
             <h3 className={styles['job-position']}>{experience.jobPosition}</h3>
             <p className={styles['company-name']}>{experience.companyName}</p>
