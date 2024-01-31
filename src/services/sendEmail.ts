@@ -15,9 +15,8 @@ export const sendEmail = async (contactFormData: ContactFormData) => {
 
   try {
     const response = await axios.post('https://api.emailjs.com/api/v1.0/email/send', emailData);
-    console.log(response);
-    return response.data;
+    return response;
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 };
