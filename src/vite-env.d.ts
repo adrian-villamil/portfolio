@@ -35,3 +35,9 @@ interface EmailData {
     message: string;
   }
 }
+
+interface SubmitStatus {
+  isSuccess: boolean;
+  isError: boolean;
+  message: string;
+}

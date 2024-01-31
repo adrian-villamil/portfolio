@@ -10,6 +10,12 @@ export const Contact = () => {
     message: '',
   });
 
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>({
+    isSuccess: false,
+    isError: false,
+    message: '',
+  });
+
   const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setFormData((prevState) => ({
@@ -21,12 +27,28 @@ export const Contact = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    try {
-      const result = await sendEmail(formData);
-      console.log(result);
-    } catch (error) {
-      console.log(error);
+    const result = await sendEmail(formData);
+    if (result?.status === 200) {
+      setSubmitStatus({
+        isSuccess: true,
+        isError: false,
+        message: 'Your message was successfully sent!',
+      });
+    } else {
+      setSubmitStatus({
+        isSuccess: false,
+        isError: true,
+        message: 'There is an error, try again!',
+      });
     }
+
+    setTimeout(() => {
+      setSubmitStatus({
+        isSuccess: false,
+        isError: false,
+        message: '',
+      })
+    }, 5000);
   };
 
   return (
@@ -74,6 +96,14 @@ export const Contact = () => {
               <button type="submit">Send Message</button>
             </div>
           </form>
+          <div className={styles['alert-container']}>
+            {submitStatus.isSuccess && (
+              <p className={styles['success-alert']}>{submitStatus.message}</p>
+            )}
+            {submitStatus.isError && (
+              <p className={styles['error-alert']}>{submitStatus.message}</p>
+            )}
+          </div>
         </div>
         <hr />
         <div className={styles['row-2']}>
