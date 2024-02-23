@@ -2,6 +2,7 @@ import { ChangeEvent, FormEvent, useState } from 'react';
 import { sendEmail } from '../../services/sendEmail';
 import { IoIosCall, IoIosMail, IoIosPin } from "react-icons/io";
 import styles from './contact.module.css';
+import { BsFillSendFill } from 'react-icons/bs';
 
 export const Contact = () => {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -52,11 +53,11 @@ export const Contact = () => {
   };
 
   return (
-    <div id='contact' className={styles.contact}>
-      <h1>Contact Me</h1>
+    <div id='contact' className={styles.container}>
+      <h1 className='section-title'>Contact Me</h1>
       <div className={styles['contact-columns']}>
         <div className={styles['row-1']}>
-          <h3>Send Me A Message</h3>
+          <h3 className={styles['row-title']}>Send Me A Message</h3>
           <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me if you have any questions, feedback, or just want to say hello!</p>
           <form className={styles.form} onSubmit={handleSubmit}>
             <div>
@@ -93,7 +94,13 @@ export const Contact = () => {
               <label htmlFor="message">Message</label>
             </div>
             <div>
-              <button type="submit">Send Message</button>
+              <button
+                type="submit"
+                className={styles['submit-button']}
+              >
+                <BsFillSendFill className={styles['submit-icon']} />
+                Send Message
+              </button>
             </div>
           </form>
           <div className={styles['alert-container']}>
@@ -107,7 +114,7 @@ export const Contact = () => {
         </div>
         <hr />
         <div className={styles['row-2']}>
-          <h3>Contact Information</h3>
+          <h3 className={styles['row-title']}>Contact Information</h3>
           <div className={styles['contact-info']}>
             <p>
               <span><IoIosMail /></span>

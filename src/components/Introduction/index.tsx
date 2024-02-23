@@ -10,7 +10,7 @@ const socials = [
 
 export const Introduction = () => {
   return (
-    <div id='home' className={styles.card}>
+    <div id='home' className={styles.container}>
       <div className={styles['img-container']}>
         <img src={portrait} alt="my-portrait" />
         <div className={styles['img-circle']}></div>

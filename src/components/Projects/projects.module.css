@@ -1,10 +1,5 @@
-.projects {
+.container {
   padding-top: 70px;
-}
-
-.projects > h1 {
-  color: var(--red-color);
-  font-size: 2.6em;
 }
 
 .list {

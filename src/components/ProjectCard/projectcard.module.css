@@ -24,13 +24,13 @@
   padding: 20px;
 }
 
-.info h3 {
+.project-name {
   font-size: 1.6em;
   margin: 0;
   color: var(--red-color);
 }
 
-.info p {
+.project-description {
   margin: 0;
   color: var(--white-color);
   text-wrap: balance;
@@ -42,14 +42,14 @@
   gap: 15px;
 }
 
-.links {
+.links-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: auto;
 }
 
-.links a {
-  width: 35%;
+.link {
+  width: 120px;
   padding: 12px 14px;
   text-decoration: none;
   text-align: center;
@@ -65,8 +65,29 @@
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
-.links a:hover {
+.link:hover {
   color: var(--white-color);
   background-color: var(--dark-black-color);
   border-color: var(--white-color);
+}
+
+@media screen and (width<=400px) {
+  .project-name {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (width<=360px) {
+  .project-name {
+    font-size: 1.2em;
+  }
+
+  .links-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .link {
+    width: 100%;
+  }
 }

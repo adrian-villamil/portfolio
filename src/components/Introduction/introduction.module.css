@@ -1,8 +1,4 @@
-:root {
-  --img-size: 300px;
-}
-
-.card {
+.container {
   display: flex;
   gap: 40px;
   padding-top: 80px;
@@ -10,12 +6,15 @@
 
 .img-container {
   position: relative;
+  width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .img-container img {
-  width: var(--img-size);
-  height: var(--img-size);
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: 0 10%;
   filter: grayscale(100%);
@@ -23,10 +22,9 @@
 
 .img-container .img-circle {
   position: absolute;
-  top: -1px;
-  width: var(--img-size);
-  height: var(--img-size);
-  border-radius: 50%;
+  top: 0px;
+  width: 100%;
+  aspect-ratio: 1/1;
   background-image: linear-gradient(to right, #ff6f4b, #fd4c55, #e13661, #c1246b, #a11477);
   z-index: -1;
 }
@@ -81,13 +79,12 @@
 }
 
 @media screen and (max-width: 900px) {
-  .card {
+  .container {
     flex-direction: column;
   }
 
   .img-container {
-    display: flex;
-    justify-content: center;
+    margin: auto;
   }
 
   .info-container :is(h1, h2, h3) {
@@ -100,6 +97,18 @@
 }
 
 @media screen and (max-width: 560px) {
+  .info-container h1 {
+    font-size: 2.5em;
+  }
+
+  .info-container h2 {
+    font-size: 1.5em;
+  }
+
+  .info-container h3 {
+    font-size: 1em;
+  }
+
   .info-buttons a {
     position: relative;
   }
@@ -135,5 +144,33 @@
 
   .info-buttons a:hover span {
     display: block;
+  }
+}
+
+@media screen and (width<=400px) {
+  .info-container h1 {
+    font-size: 2em;
+  }
+
+  .info-container h2 {
+    font-size: 1.2em;
+  }
+
+  .info-container h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (width<=340px) {
+  .info-container h1 {
+    font-size: 1.5em;
+  }
+
+  .info-container h2 {
+    font-size: 1em;
+  }
+
+  .img-container {
+    width: 100%;
   }
 }

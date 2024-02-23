@@ -1,10 +1,5 @@
-.contact {
+.container {
   padding-top: 70px;
-}
-
-.contact>h1 {
-  color: var(--red-color);
-  font-size: 2.6em;
 }
 
 .contact-columns {
@@ -22,8 +17,7 @@
   width: 100%;
 }
 
-.row-1>h3,
-.row-2>h3 {
+.row-title {
   font-size: 1.8em;
   text-align: center;
   margin-top: 0;
@@ -82,8 +76,11 @@
   color: rgb(47, 166, 255);
 }
 
-.form button {
-  display: block;
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
   margin: auto;
   padding: 14px 16px;
   width: 200px;
@@ -96,9 +93,13 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.form button:hover {
+.submit-button:hover {
   color: var(--white-color);
   background-color: var(--light-black-color);
+}
+
+.submit-icon {
+  font-size: 1.2em;
 }
 
 .alert-container {
@@ -142,7 +143,11 @@
   color: var(--red-color);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (width<=750px) {
+  .container {
+    width: 100%;
+  }
+
   .contact-columns {
     width: 100%;
   }
@@ -152,12 +157,50 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .row-1>h3, .row-2>h3 {
+@media screen and (width<=530px) {
+  .contact-columns {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .row-title {
     font-size: 1.4em;
+  }
+
+  .row-1>p {
+    font-size: 0.9em;
+  }
+
+  .form label {
+    font-size: 0.9em;
+  }
+
+  .submit-button {
+    font-size: 0.9em;
+  }
+
+  .submit-icon {
+    font-size: 1.1em;
   }
 
   .contact-info>p {
     font-size: 1em;
+    gap: 9px;
+  }
+}
+
+@media screen and (width<=420px) {
+  .row-title {
+    font-size: 1.2em;
+  }
+
+  .contact-info>p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (width<=300px) {
+  .submit-button {
+    width: 100%;
   }
 }

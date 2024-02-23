@@ -13,8 +13,8 @@ const experiences: Experience[] = [
 
 export const Experience = () => {
   return (
-    <div id='experience' className={styles.experience}>
-      <h1>Experience</h1>
+    <div id='experience' className={styles.container}>
+      <h1 className="section-title">Experience</h1>
       <section className={styles.list}>
         {experiences.map((experience) => (
           <div key={experience.id} className={styles.box}>

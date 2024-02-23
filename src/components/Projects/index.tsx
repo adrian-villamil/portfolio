@@ -54,8 +54,8 @@ const projects: Project[] = [
 
 export const Projects = () => {
   return (
-    <div id="projects" className={styles.projects}>
-      <h1>Projects</h1>
+    <div id="projects" className={styles.container}>
+      <h1 className='section-title'>Projects</h1>
       <section className={styles.list}>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
