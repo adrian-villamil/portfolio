@@ -157,7 +157,7 @@
   }
 }
 
-@media screen and (width<=530px) {
+@media screen and (width<=560px) {
   .contact-columns {
     padding: 20px;
     border-radius: 20px;
@@ -189,7 +189,7 @@
   }
 }
 
-@media screen and (width<=420px) {
+@media screen and (width<=450px) {
   .row-title {
     font-size: 1.2em;
   }
@@ -199,7 +199,7 @@
   }
 }
 
-@media screen and (width<=300px) {
+@media screen and (width<=360px) {
   .submit-button {
     width: 100%;
   }

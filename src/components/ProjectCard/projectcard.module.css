@@ -71,9 +71,13 @@
   border-color: var(--white-color);
 }
 
-@media screen and (width<=400px) {
+@media screen and (width<=450px) {
   .project-name {
     font-size: 1.4em;
+  }
+
+  .project-description {
+    font-size: 0.95em;
   }
 }
 

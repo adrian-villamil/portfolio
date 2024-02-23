@@ -147,7 +147,7 @@
   }
 }
 
-@media screen and (width<=400px) {
+@media screen and (width<=450px) {
   .info-container h1 {
     font-size: 2em;
   }
@@ -161,7 +161,7 @@
   }
 }
 
-@media screen and (width<=340px) {
+@media screen and (width<=360px) {
   .info-container h1 {
     font-size: 1.5em;
   }
