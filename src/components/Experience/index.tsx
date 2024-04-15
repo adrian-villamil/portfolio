@@ -5,6 +5,13 @@ const experiences: Experience[] = [
   {
     id: 1,
     jobPosition: 'Frontend Developer',
+    companyName: 'Ingecinco LTDA',
+    dates: 'July 2021 - September 2022',
+    jobDescription: 'Development of a frontend-oriented web application with ReactJS as a framework.'
+  },
+  {
+    id: 2,
+    jobPosition: 'Frontend Developer',
     companyName: 'BitPointer SAS',
     dates: 'February 2023 - January 2024',
     jobDescription: 'In charge of developing interfaces for web applications using technologies such as ReactJS and MaterialUI.'
