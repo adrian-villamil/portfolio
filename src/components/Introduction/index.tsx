@@ -1,6 +1,6 @@
 import portrait from '../../assets/images/portrait.png';
 import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
-import CVPDF from '../../assets/documents/Curriculum Vitae.pdf';
+import CVPDF from '../../assets/documents/RESUME - ADRIAN VILLAMIL.pdf';
 import styles from './introduction.module.css';
 
 const socials = [
