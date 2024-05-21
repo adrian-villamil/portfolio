@@ -14,7 +14,10 @@ const experiences: Experience[] = [
     jobPosition: 'Frontend Developer',
     companyName: 'BitPointer SAS',
     dates: 'February 2023 - January 2024',
-    jobDescription: 'In charge of developing interfaces for web applications using technologies such as ReactJS and MaterialUI.'
+    jobDescription: `
+      In charge of creating web interfaces with ReactJS and MaterialUI for the online procedures portal, and general
+      control of requests and environmental requirements in the meta department.
+    `
   },
 ];
 

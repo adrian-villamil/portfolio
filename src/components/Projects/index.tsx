@@ -1,15 +1,27 @@
 import rickmortyImage from '../../assets/images/rickmorty-screenshot.png';
 import avocadoImage from '../../assets/images/avocado-screenshot.png';
 import todoappImage from '../../assets/images/todoapp-screenshot.png';
-import { MuiPill } from '../Pills/MuiPill';
-import { NextPill } from '../Pills/NextPill';
-import { ReactPill } from '../Pills/ReactPill';
-import { ReduxPill } from '../Pills/ReduxPill';
+import tesloShopImage from '../../assets/images/tesloshop-screenshop.png';
+import { NextPill, ReactPill, TypeScriptPill, ReduxPill, MuiPill, PrismaPill, TailwindCssPill } from '../Pills';
 import { ProjectCard } from '../ProjectCard';
 import styles from './projects.module.css';
-import { TypeScriptPill } from '../Pills/TypeScriptPill';
 
 const projects: Project[] = [
+  {
+    id: 2,
+    name: 'Teslo Shop',
+    description: 'Tesla e-commerce clone where you can buy different kind of clothes for men, women and kids.',
+    image: tesloShopImage,
+    pills: [
+      <NextPill />,
+      <ReactPill />,
+      <TypeScriptPill />,
+      <TailwindCssPill />,
+      <PrismaPill />
+    ],
+    codeUrl: 'https://github.com/adrian-villamil/teslo-shop',
+    demoUrl: 'https://tienda-teslo-shop-av.vercel.app/'
+  },
   {
     id: 1,
     name: 'Rick And Morty App',
