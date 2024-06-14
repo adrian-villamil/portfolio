@@ -46,8 +46,8 @@ const projects: Project[] = [
       <TailwindCssPill />,
       <TypeScriptPill />
     ],
-    codeUrl: 'https://github.com/adrian-villamil/platzi-nextjs-basico-avocado',
-    demoUrl: 'https://platzi-nextjs-basico-avocado.vercel.app/'
+    codeUrl: 'https://github.com/adrian-villamil/countrypage-worldranks',
+    demoUrl: 'https://countrypage-worldranks.vercel.app/'
   },
   {
     id: 4,
