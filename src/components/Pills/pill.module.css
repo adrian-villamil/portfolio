@@ -1,5 +1,5 @@
 .container {
-  font-size: 0.9em;
+  font-size: 12px;
   background-color: var(--dark-black-color);
   padding: 8px 10px;
   color: var(--yellow-color);

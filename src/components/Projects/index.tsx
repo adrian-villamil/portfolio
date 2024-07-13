@@ -2,10 +2,9 @@ import rickmortyImage from '../../assets/images/rickmorty-screenshot.png';
 import avocadoImage from '../../assets/images/avocado-screenshot.png';
 import tesloShopImage from '../../assets/images/tesloshop-screenshop.png';
 import worldRanks from '../../assets/images/worldranks-screenshot.png';
-import { NextPill, ReactPill, TypeScriptPill, ReduxPill, PrismaPill, TailwindCssPill } from '../Pills';
+import { NextPill, ReactPill, TypeScriptPill, ReduxPill, PrismaPill, TailwindCssPill, ShadcnuiPill } from '../Pills';
 import { ProjectCard } from '../ProjectCard';
 import styles from './projects.module.css';
-import { ShadcnuiPill } from '../Pills/ShadcnuiPill';
 
 const projects: Project[] = [
   {
@@ -41,7 +40,7 @@ const projects: Project[] = [
   {
     id: 3,
     name: 'World Ranks',
-    description: "World Ranks's app gamifies learning about the world's countries. Users can browse a comprehensive list, sort by various criteria, filter by region or status, and search for specific countries. Clicking a country reveals a dedicated information page. This app is perfect for travelers, geography buffs, and students alike.",
+    description: "World Ranks's app gamifies learning about the world's countries. Users can browse a comprehensive list, sort by various criteria, filter by region or status, and search for specific countries.",
     image: worldRanks,
     pills: [
       <NextPill />,
