@@ -5,6 +5,7 @@ import worldRanks from '../../assets/images/worldranks-screenshot.png';
 import { NextPill, ReactPill, TypeScriptPill, ReduxPill, PrismaPill, TailwindCssPill } from '../Pills';
 import { ProjectCard } from '../ProjectCard';
 import styles from './projects.module.css';
+import { ShadcnuiPill } from '../Pills/ShadcnuiPill';
 
 const projects: Project[] = [
   {
@@ -30,7 +31,9 @@ const projects: Project[] = [
     pills: [
       <NextPill />,
       <ReactPill />,
-      <TypeScriptPill />
+      <TypeScriptPill />,
+      <TailwindCssPill />,
+      <ShadcnuiPill />
     ],
     codeUrl: 'https://github.com/adrian-villamil/nextjs-rickmorty-app',
     demoUrl: 'https://nextjs-rickmorty-app.vercel.app/'
