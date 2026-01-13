@@ -20,7 +20,7 @@ export const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-sm lg:max-w-md rounded-lg overflow-hidden border-2 border-border shadow-lg">
               <Image
-                src="/images/portfolio-photo.png"
+                src="/images/hero-photo.png"
                 alt="Profile photo"
                 width={928}
                 height={1120}
