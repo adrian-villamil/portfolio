@@ -14,9 +14,9 @@ const experiences = [
     role: "Frontend Developer",
     duration: "Feb 2023 - Dec 2023",
     achievements: [
-      "Architected and developed interactive user interfaces using Next.js, Tailwind CSS, and shadcn/ui, improving overall application performance and aesthetics.",
-      "Streamlined data administration by creating custom modular components, allowing users to visualize and manage complex information more efficiently.",
-      "Implemented type-safe development workflows with TypeScript and validated complex data structures using Zod to ensure production stability.",
+      "Engineered high-performance dashboards using Material UI to manage and display large-scale datasets for business intelligence.",
+      "Developed interactive diagrams and data visualization tools, integrating business logic into the frontend for a more engaging user experience.",
+      "Managed complex form states and client-side validation using React Hook Form and Yup, reducing form submission errors by providing real-time feedback.",
     ],
   },
   {
@@ -24,9 +24,9 @@ const experiences = [
     role: "Frontend Developer",
     duration: "Jul 2021 - Sep 2022",
     achievements: [
-      "Architected and developed interactive user interfaces using Next.js, Tailwind CSS, and shadcn/ui, improving overall application performance and aesthetics.",
-      "Streamlined data administration by creating custom modular components, allowing users to visualize and manage complex information more efficiently.",
-      "Implemented type-safe development workflows with TypeScript and validated complex data structures using Zod to ensure production stability.",
+      "Designed and implemented modern, responsive UIs from scratch using React.js, focusing on delivering a clean and intuitive user experience for company-specific business tools.",
+      "Collaborated on the modernization of legacy interfaces, transforming them into high-fidelity web applications with a focus on usability.",
+      "Ensured cross-browser compatibility and mobile-first responsiveness across all developed features.",
     ],
   },
 ];
