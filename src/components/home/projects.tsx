@@ -52,7 +52,9 @@ export const Projects = () => {
       className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30"
     >
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl font-bold tracking-tight mb-8">Projects</h2>
+        <h2 className="text-3xl font-bold tracking-tight mb-12 text-balance">
+          Projects
+        </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <Card
