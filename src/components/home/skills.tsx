@@ -19,7 +19,7 @@ const skillCategories = [
   },
   {
     title: "UI Components",
-    skills: ["Material UI", "Shadcn UI"],
+    skills: ["Shadcn UI", "Material UI"],
   },
   {
     title: "Backend & Database",
@@ -31,13 +31,13 @@ export const Skills = () => {
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl font-bold tracking-tight mb-12 text-balance">
+        <h2 className="text-3xl font-bold tracking-tight mb-12 text-balance dark:text-primary">
           Skills & Technologies
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <div key={index} className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="text-lg font-semibold dark:text-secondary-foreground">
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2">

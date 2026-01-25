@@ -5,11 +5,11 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30"
     >
       <div className="container mx-auto max-w-3xl text-center space-y-8">
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold tracking-tight text-balance">
+          <h2 className="text-3xl font-bold tracking-tight text-balance dark:text-primary">
             {"Let's Work Together"}
           </h2>
           <p className="text-lg leading-relaxed text-muted-foreground max-w-2xl mx-auto">
