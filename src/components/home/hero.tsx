@@ -8,7 +8,9 @@ export const Hero = () => {
           <div className="space-y-10">
             <div>
               <h1 className="text-5xl sm:text-6xl font-bold tracking-tight mb-3 text-balance">
-                {"Hi, I'm Adrian Villamil. I build web products."}
+                {"Hi, I'm "}
+                <span className="text-primary">Adrian Villamil</span>
+                {". I build web products."}
               </h1>
             </div>
             <p className="text-base leading-relaxed text-muted-foreground">
