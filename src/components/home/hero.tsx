@@ -27,6 +27,7 @@ export const Hero = () => {
                 width={928}
                 height={1120}
                 className="w-full h-auto object-cover"
+                loading="eager"
               />
             </div>
           </div>
