@@ -8,37 +8,37 @@ export const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
-            <a href="#" className="text-lg font-semibold tracking-tight">
+            <a href="#" className="text-lg font-semibold tracking-tight text-primary">
               Portfolio
             </a>
             <nav className="hidden md:flex items-center gap-6">
               <a
                 href="#about"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground dark:hover:text-primary transition-colors"
               >
                 About
               </a>
               <a
                 href="#experience"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground dark:hover:text-primary transition-colors"
               >
                 Experience
               </a>
               <a
                 href="#projects"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground dark:hover:text-primary transition-colors"
               >
                 Projects
               </a>
               <a
                 href="#skills"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground dark:hover:text-primary transition-colors"
               >
                 Skills
               </a>
               <a
                 href="#contact"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground dark:hover:text-primary transition-colors"
               >
                 Contact
               </a>
