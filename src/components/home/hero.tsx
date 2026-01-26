@@ -14,7 +14,7 @@ export const Hero = () => {
               </h1>
             </div>
             <p className="text-base leading-relaxed text-muted-foreground">
-              Frontend Developer specialized in React.js and Next.js. 3+ years
+              Frontend Developer specialized in React.js and Next.js. 5+ years
               of experience creating seamless user interfaces with modern CSS
               frameworks.
             </p>
