@@ -2,7 +2,7 @@ const experiences = [
   {
     company: "Metrópolis",
     role: "Frontend Developer",
-    duration: "Jan 2025 - Dec 2025",
+    duration: "Jan 2024 - Dec 2025",
     achievements: [
       "Architected and developed interactive user interfaces using Next.js, Tailwind CSS, and shadcn/ui, improving overall application performance and aesthetics.",
       "Streamlined data administration by creating custom modular components, allowing users to visualize and manage complex information more efficiently.",
@@ -22,7 +22,7 @@ const experiences = [
   {
     company: "Ingecinco Ltda",
     role: "Frontend Developer",
-    duration: "Jul 2021 - Sep 2022",
+    duration: "Jan 2021 - Dec 2022",
     achievements: [
       "Designed and implemented modern, responsive UIs from scratch using React.js, focusing on delivering a clean and intuitive user experience for company-specific business tools.",
       "Collaborated on the modernization of legacy interfaces, transforming them into high-fidelity web applications with a focus on usability.",
