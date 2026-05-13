@@ -2,7 +2,7 @@ const experiences = [
   {
     company: "Metrópolis",
     role: "Frontend Developer",
-    duration: "Jan 2024 - Dec 2025",
+    duration: "Jan 2024 - May 2026",
     achievements: [
       "Architected and developed interactive user interfaces using Next.js, Tailwind CSS, and shadcn/ui, improving overall application performance and aesthetics.",
       "Streamlined data administration by creating custom modular components, allowing users to visualize and manage complex information more efficiently.",
